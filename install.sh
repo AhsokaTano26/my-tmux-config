@@ -8,4 +8,7 @@ fi
 # 2. 创建软链接
 ln -sf $(pwd)/tmux/tmux.conf ~/.tmux.conf
 
+# 3. 加载配置文件
+tmux source ~/.tmux.conf
+
 echo "Tmux 配置已同步。请进入 tmux 后按下: Ctrl+b + I (大写) 来安装插件。"
